@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(to right bottom, #ff9933, white, #138808);
+    height: 100vh;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+input{
+    position: relative;
+    right: 10px;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+.container{
+
+ width: auto;
+ padding: 20px;
+border:1px solid red;
+
+border-radius: 10px;
+    color: brown;
+}
+
+li {
+    background: white;
+    padding: 10px;
+    border: 2px solid black; /* Border outside the text */
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    margin: 10px auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+li span {
+    display: inline-block;
+    border: 2px solid black; /* Border only around text */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button{
+    cursor: pointer;
+    background-color: lightblue ;
+}
+li:hover {
+    background-color:lightcyan;
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+/* 📱 Responsive Design */
+@media (max-width: 480px) {
+    #task {
+        width: 100%; /* Full width on smaller screens */
+    }
+ul{
+    position: relative;
+    right: 20px;
+}
+    li {
+        flex-direction: column; /* Stack text and button */
+        text-align: center;
+    }
+
+    li button {
+        margin-top: 5px; /* Space for button when stacked */
+    }
+}
